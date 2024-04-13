@@ -4,7 +4,7 @@ const nextConfig = {
         domains: ["res.cloudinary.com"],
     },
     env: {
-        API_URL: "http://localhost:8000",
+        API_URL: "https://blog-site-server-d9uh.onrender.com/",
     }
 
 };
