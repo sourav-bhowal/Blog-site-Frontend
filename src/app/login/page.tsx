@@ -91,7 +91,7 @@ const LoginPage = () => {
         </button>
 
         <Link href={"/signin"}>
-          <button className='underline text-white font-bold px-4 hover:opacity-70 w-full text-sm lg:text-base'>Don't have a account? Sign In</button>
+          <button className='underline text-white font-bold px-4 hover:opacity-70 w-full text-sm lg:text-base'>Dont have a account? Sign In</button>
         </Link>
 
       </form>
