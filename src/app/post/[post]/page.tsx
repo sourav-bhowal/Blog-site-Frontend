@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
 
 
-const page = ({params} : any) => {
+const Usepage = ({params} : any) => {
 
   axios.defaults.withCredentials = true;
 
@@ -197,4 +197,4 @@ const page = ({params} : any) => {
   )
 }
 
-export default page
+export default Usepage
