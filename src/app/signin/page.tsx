@@ -9,6 +9,8 @@ import Image from 'next/image';
 
 const SignInPage = () => {
 
+  axios.defaults.withCredentials = true
+
   const router = useRouter();
   const [buttonDisabled, setButtonDisabled] = useState(true);
   const [loading, setLoading] = useState(false);

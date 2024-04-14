@@ -10,6 +10,8 @@ import { useState } from "react";
 
 const HeroSection = () => {
 
+  axios.defaults.withCredentials = true
+
   const router = useRouter();
   const [navActive, setNavActive] = useState(false);
 

@@ -4,6 +4,7 @@ import axios from 'axios'
 
 const Bloggers = () => {
 
+  axios.defaults.withCredentials = true
   const [users, setUsers] = useState<any>([])
 
   useEffect(() => {

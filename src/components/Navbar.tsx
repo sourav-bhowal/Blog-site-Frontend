@@ -1,15 +1,11 @@
 "use client"
 import React, { useState } from 'react'
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
-import { cn } from "@/utils/cn";
 import Link from "next/link";
-import { useRouter } from 'next/navigation';
-import axios from 'axios';
 
 
 const Navbar = ({ className }: { className?: string }) => {
 
-  const router = useRouter();
   
   const [active, setActive] = useState<string | null>(null);
   return (
