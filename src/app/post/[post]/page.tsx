@@ -97,7 +97,7 @@ const Usepage = ({params} : any) => {
         <div className='flex flex-col gap-10 w-full'>
 
           <div className='flex justify-between'>
-            <h1 className='lg:text-5xl text-xl text-white capitalize font-bold'>{post.title}</h1>
+            <h1 className='lg:text-5xl text-3xl text-white capitalize font-bold'>{post.title}</h1>
             <div className="w-10 lg:w-20">
               {
                 userId.current === post.owner && (
