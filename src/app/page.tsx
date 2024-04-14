@@ -13,6 +13,7 @@ import Bloggers from "@/components/Bloggers";
 export default function Home() {
 
   const router = useRouter();
+  axios.defaults.withCredentials = true;
 
   useEffect(() => {
     axios.post(`${process.env.API_URL}/api/v1/users/verifyUser`)
