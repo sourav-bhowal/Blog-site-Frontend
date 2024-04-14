@@ -75,7 +75,7 @@ const HeroSection = () => {
               <div className="flex flex-col justify-center items-center gap-2 ">
                 <Link href={"/signin"}>
                   <button className='text-white bg-lime-400 rounded-2xl w-24 hover:bg-white hover:text-black font-bold py-2'>
-                    Sign U
+                    Sign Up
                   </button>
                 </Link>
                 <button className='text-white bg-lime-400 rounded-2xl w-24 hover:bg-white hover:text-black font-bold py-2'
