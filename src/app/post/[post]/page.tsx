@@ -90,7 +90,7 @@ const Usepage = ({params} : any) => {
   };
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen px-6 py-2 bg-gradient-to-r from-lime-300 to-slate-900'>
+    <div className='flex flex-col items-center justify-center min-h-screen px-2 py-2 bg-gradient-to-r from-lime-300 to-slate-900'>
         
       <div className='bg-black/80 rounded-3xl w-[90%] flex justify-start items-center lg:px-20 px-6 py-20 mt-10'>
 
@@ -135,14 +135,14 @@ const Usepage = ({params} : any) => {
             className='bg-slate-700 rounded-2xl p-4 w-[60%]' 
             placeholder='Add comment...' 
           />
-          <button onClick={AddCommentHandler} className='bg-lime-400 py-4 w-[8rem] rounded-2xl  text-xl font-semibold hover:bg-black text-black hover:text-white'>
+          <button onClick={AddCommentHandler} className='bg-lime-400 py-4 lg:w-[8rem] w-[4rem] rounded-2xl  text-xl font-semibold hover:bg-black text-black hover:text-white'>
             Add
           </button>
         </div>
       
         <button
           onClick={HandleComment}
-          className='bg-lime-400 py-3 rounded-2xl w-[20rem]  text-xl font-semibold hover:bg-black text-black hover:text-white'>
+          className='bg-lime-400 py-3 rounded-2xl lg:w-[20rem] w-[12rem]  text-xl font-semibold hover:bg-black text-black hover:text-white'>
             Show Comments
         </button>
 

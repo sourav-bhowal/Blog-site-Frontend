@@ -10,7 +10,7 @@ export function About() {
       <div>
         <div className="text-center">
             <h2 className="sm:text-4xl text-2xl text-lime-400 font-bold tracking-wide uppercase">Testimonials</h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-wide text-white sm:text-5xl">Know What Our Users Say</p>
+            <p className="mt-2 text-2xl leading-8 font-extrabold tracking-wide text-white sm:text-5xl">Know What Our Users Say</p>
         </div>
       </div>
 

@@ -7,7 +7,7 @@ const Contact = () => {
 
 
   return (
-    <div className='relative bg-gradient-to-r from-lime-300 to-slate-900 py-10 lg:px-16 px-10 items-center text-2xl justify-center' id="contact">
+    <div className='relative bg-gradient-to-r from-lime-300 to-slate-900 py-10 lg:px-16 px-5 items-center text-2xl justify-center' id="contact">
       
       <div className=" bg-black/40 rounded-3xl py-10 px-10">
 

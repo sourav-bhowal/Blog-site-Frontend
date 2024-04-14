@@ -98,9 +98,9 @@ const HeroSection = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="flex flex-col justify-center items-center gap-10 mt-24"
+        className="flex flex-col justify-center items-center gap-10 mt-24 w-full"
       >
-        <h1 className="lg:text-6xl text-3xl font-bold text-lime-500 px-10">Start your journey with us. Enjoy blogging</h1>
+        <h1 className="lg:text-6xl text-4xl font-bold text-lime-500 px-5 text-center">Start your journey with us. Enjoy blogging</h1>
         <Link href="/createpost">
           <button className="text-white text-lg bg-lime-400/90 rounded-2xl hover:bg-white/80 hover:text-black font-bold py-3 px-4">
             Write a Blog

@@ -22,16 +22,16 @@ const Posts = () => {
             <div>
                 <div className="text-center w-full">
                     <h2 className="sm:text-4xl text-2xl text-lime-400 font-bold tracking-wide uppercase">Featured Blogs</h2>
-                    <p className="mt-2 text-xl leading-8 font-extrabold tracking-wide text-white sm:text-5xl">Explore Our Latest Blogs</p>
+                    <p className="mt-2 text-2xl leading-8 font-extrabold tracking-wide text-white sm:text-5xl">Explore Our Latest Blogs</p>
                 </div>
             </div>
 
-            <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-16 w-full px-10 lg:px-20" >
+            <div className="grid lg:grid-cols-3 grid-cols-1 lg:gap-16 w-full px-5 lg:px-20" >
                 {posts.map((post: any) => (
                    <CardContainer className="flex items-center justify-center w-full" key={post._id}>
                    <CardBody 
-                   className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] 
-                   dark:bg-black dark:border-white/[0.2] border-black/[0.1] border rounded-xl p-6 h-full">
+                   className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-lime-400/[0.4] 
+                   dark:bg-black dark:border-lime-400/[0.5] border-black/[0.1] border rounded-xl p-6 h-full">
                      <CardItem
                        translateZ="50"
                        className="text-2xl font-bold text-neutral-600 dark:text-white"
