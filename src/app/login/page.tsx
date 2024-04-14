@@ -19,6 +19,7 @@ const LoginPage = () => {
   
 
   axios.defaults.withCredentials = true;
+  
   function handleLogin(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const response = axios.post(`${process.env.API_URL}/api/v1/users/login`, user);
