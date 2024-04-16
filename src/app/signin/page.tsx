@@ -57,9 +57,8 @@ const SignInPage = () => {
 
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen px-16 py-2 bg-gradient-to-r from-lime-300 to-slate-900'>
-
-      <div className='flex flex-col items-center justify-center px-20 py-10 text-center gap-10 bg-black/80 rounded-3xl'>
+    <div className="flex flex-col items-center justify-center min-h-screen lg:px-16 px-5 py-2 bg-gradient-to-r from-lime-300 to-slate-900 w-full">
+      <div className="flex flex-col items-center justify-center py-10 text-center gap-10 bg-black/80 rounded-3xl w-full lg:w-1/3">
 
       <h1 className=' p-4 text-5xl font-bold text-center'>
         SignUp
