@@ -60,7 +60,7 @@ const CreatePostPage = () => {
       </h1>
 
 
-      <form onSubmit={handleCreatePost} className='flex flex-col gap-6 justify-center items-center'>
+      <form onSubmit={handleCreatePost} className='flex flex-col gap-6 justify-center items-center w-[80%]'>
         
         <div className='flex flex-col justify-center items-center gap-3 w-full'>
           <label htmlFor='title' className='text-lg'>Title</label>
@@ -97,14 +97,14 @@ const CreatePostPage = () => {
           />
         </div>
         
-        <div className='flex flex-col justify-center items-center gap-3'>
+        <div className='flex flex-col justify-center items-center gap-3 w-full'>
           <label htmlFor='image' className='text-lg'>Image</label>
           <input 
             id='image'
             type='file' 
             placeholder='image' 
             onChange={(e) => setImgFile(e.target.files![0])} 
-            className='p-2 rounded-xl text-lg bg-white text-black'
+            className='p-2 rounded-xl text-lg bg-white text-black w-full'
           />
         </div>
   

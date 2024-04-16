@@ -64,7 +64,7 @@ const SignInPage = () => {
         SignUp
       </h1>
 
-      <form onSubmit={handleSignin}  className='flex flex-col gap-6 justify-center items-center'>
+      <form onSubmit={handleSignin}  className='flex flex-col gap-6 justify-center items-center w-[80%]'>
         
       <div className='flex flex-col justify-center items-center gap-3 w-full'>
           <label htmlFor='username' className='text-lg'>Username</label>
@@ -102,14 +102,14 @@ const SignInPage = () => {
           />
         </div>
         
-        <div className='flex flex-col justify-center items-center gap-3'>
+        <div className='flex flex-col justify-center items-center gap-3 w-full'>
           <label htmlFor='profilePic' className='text-lg'>ProfilePic</label>
           <input 
             id='profilePic'
             type='file' 
             placeholder='profilePic' 
             onChange={(e) => setImgFile(e.target.files![0])} 
-            className='p-2 rounded-xl text-lg bg-white text-black'
+            className='p-2 rounded-xl text-lg bg-white text-black w-full'
           />
         </div>
         

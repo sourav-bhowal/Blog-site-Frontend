@@ -50,15 +50,15 @@ const LoginPage = () => {
 
 
   return (
-    <div className='flex flex-col items-center justify-center min-h-screen px-6 py-2 bg-gradient-to-r from-lime-300 to-slate-900'>
+    <div className='flex flex-col items-center justify-center min-h-screen px-6 py-2 bg-gradient-to-r from-lime-300 to-slate-900 w-full'>
 
-      <div className='flex flex-col items-center justify-center px-20 py-10 text-center gap-16 bg-black/80 rounded-3xl'>
+      <div className='flex flex-col items-center justify-center px-20 py-10 text-center gap-16 bg-black/80 rounded-3xl w-full lg:w-1/4'>
 
       <h1 className=' p-4 text-5xl font-bold text-center'>
         Login
       </h1>
 
-      <form onSubmit={handleLogin} className='flex flex-col gap-6 justify-center items-center'>
+      <form onSubmit={handleLogin} className='flex flex-col gap-6 justify-center items-center w-[80%]'>
         
         <div className='flex flex-col justify-center items-center gap-3 w-full'>
           <label htmlFor='username' className='text-lg'>Username</label>
