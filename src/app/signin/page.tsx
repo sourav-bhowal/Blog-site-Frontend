@@ -118,7 +118,7 @@ const SignInPage = () => {
             <>
             <Image src={"/loader.svg"} alt="loader" width={25} height={25} className='flex items-center justify-center'/>
             </>
-          ) : "SignIn"}
+          ) : "SignUp"}
         </button>
 
         <Link href={"/login"}>
