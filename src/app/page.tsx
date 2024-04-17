@@ -4,25 +4,22 @@ import Contact from "@/components/Contact";
 import HeroSection from "@/components/HeroSection";
 import Posts from "@/components/Posts";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import axios from "axios";
-import toast from "react-hot-toast";
-import Bloggers from "@/components/Bloggers";
+
 
 export default function Home() {
 
   const router = useRouter();
-  axios.defaults.withCredentials = true;
 
   useEffect(() => {
-    axios.post(`${process.env.API_URL}/api/v1/users/verifyUser`)
-    .then((res) => {
-      console.log("user verified")
+    const response = axios.post(`${process.env.API_URL}/api/v1/users/verifyUser`)
+    response.then((res) => {
+      console.log("verified")
     })
-    .catch((err) => {
+    response.catch((err) => {
       console.log(err)
       router.push("/login")
-      toast.error(err.response.data.message);
     })
   });
   
