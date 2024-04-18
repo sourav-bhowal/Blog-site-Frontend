@@ -11,11 +11,11 @@ import axios from "axios";
 export default function Home() {
 
   const router = useRouter();
-
+  axios.defaults.withCredentials = true
   useEffect(() => {
     const response = axios.post(`${process.env.API_URL}/api/v1/users/verifyUser`)
     response.then((res) => {
-      console.log("verified")
+      console.log("user verified")
     })
     response.catch((err) => {
       console.log(err)

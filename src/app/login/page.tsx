@@ -83,7 +83,7 @@ const LoginPage = () => {
           />
         </div>
         
-        <button disabled={buttonDisabled} type='submit' className={`bg-lime-300 ${buttonDisabled ? "cursor-not-allowed" : "cursor-pointer"} hover:bg-black/60 text-white font-bold mt-2 py-2 px-4 rounded-full lg:w-[10rem] w-[5rem] flex items-center justify-center`}>
+        <button disabled={buttonDisabled} type='submit' className={`bg-lime-300 ${buttonDisabled ? "cursor-not-allowed" : "cursor-pointer"} hover:bg-black/60 text-white font-bold mt-2 py-2 px-4 rounded-full lg:w-[10rem] w-[8rem] flex items-center justify-center`}>
           {loading ? (
             <>
             <Image src={"/loader.svg"} alt="loader" width={25} height={25} className='flex items-center justify-center'/>
