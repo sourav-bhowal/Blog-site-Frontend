@@ -57,29 +57,30 @@ const SignInPage = () => {
 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen lg:px-16 px-5 py-2 bg-gradient-to-r from-lime-300 to-slate-900 w-full">
-      <div className="flex flex-col items-center justify-center py-10 text-center gap-10 bg-black/80 rounded-3xl w-full lg:w-1/3">
+    <div className='flex flex-col items-center justify-center min-h-screen lg:px-16 px-5 py-2 bg-gradient-to-r from-lime-300 to-slate-900 w-full'>
+
+      <div className='flex flex-col items-center justify-center py-10 text-center gap-10 bg-black/80 rounded-3xl w-full lg:w-1/3'>
 
       <h1 className=' p-4 text-5xl font-bold text-center'>
         SignUp
       </h1>
 
       <form onSubmit={handleSignin}  className='flex flex-col gap-6 justify-center items-center w-[80%]'>
-        
+      
       <div className='flex flex-col justify-center items-center gap-3 w-full'>
-          <label htmlFor='username' className='text-lg'>Username</label>
+          <label htmlFor='username' className='text-lg'><span className='text-red-500'>*</span>Username</label>
           <input
             id='username' 
             type='text' 
             placeholder='username' 
             value={user.username} 
             onChange={(e) => setUser({ ...user, username: e.target.value })} 
-            className='p-2 rounded-xl text-lg w-full text-black'
+            className='p-2 rounded-xl text-lg text-black w-full'
         />
         </div>
         
         <div className='flex flex-col justify-center items-center gap-3 w-full'>
-          <label htmlFor='email' className='text-lg'>Email</label>
+          <label htmlFor='email' className='text-lg'><span className='text-red-500'>*</span>Email</label>
           <input
             id='email'
             type='email' 
@@ -92,7 +93,7 @@ const SignInPage = () => {
 
         
         <div className='flex flex-col justify-center items-center gap-3 w-full'>
-          <label htmlFor='password' className='text-lg'>Password</label>
+          <label htmlFor='password' className='text-lg'><span className='text-red-500'>*</span>Password</label>
           <input 
             type='password' 
             placeholder='password' 
@@ -103,7 +104,7 @@ const SignInPage = () => {
         </div>
         
         <div className='flex flex-col justify-center items-center gap-3 w-full'>
-          <label htmlFor='profilePic' className='text-lg'>ProfilePic</label>
+          <label htmlFor='profilePic' className='text-lg'><span className='text-red-500'>*</span>ProfilePic</label>
           <input 
             id='profilePic'
             type='file' 
@@ -112,8 +113,12 @@ const SignInPage = () => {
             className='p-2 rounded-xl text-lg bg-white text-black w-full'
           />
         </div>
+
+        <div className='text-red-500 text-xs text-left w-full'>
+          *All fields are required
+        </div>
         
-        <button disabled={buttonDisabled} type='submit' className={`bg-lime-400 ${buttonDisabled ? "cursor-not-allowed" : "cursor-pointer"} hover:bg-black/60 text-white font-bold mt-2 py-2 px-4 rounded-full lg:w-[10rem] w-[5rem] flex items-center justify-center`}>
+        <button disabled={buttonDisabled} type='submit' className={`bg-lime-400 ${buttonDisabled ? "cursor-not-allowed opacity-20" : "cursor-pointer"} hover:bg-black/60 text-white font-bold mt-2 py-2 px-4 rounded-full lg:w-[10rem] w-[5rem] flex items-center justify-center`}>
           {loading ? (
             <>
             <Image src={"/loader.svg"} alt="loader" width={25} height={25} className='flex items-center justify-center'/>
